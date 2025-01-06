@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Windsor FBLA - Data Science Resources</title>
+    <style>
+        :root {
+            --primary-color: #003087; /* FBLA Blue */
+            --secondary-color: #FFD700; /* Gold */
+            --accent-color: #002266; /* Darker Blue */
+            --text-color: #333;
+            --light-bg: #F9F9F9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 48, 135, 0.9), rgba(0, 48, 135, 0.9)), url('/api/placeholder/1200/600');
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            margin-top: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #FFE44D;
+        }
+
+        .content-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .resource-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: 2px solid var(--primary-color);
+        }
+
+        .resource-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .resource-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .resource-card a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .contact-section {
+            background-color: var(--primary-color);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .contact-section h2 {
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .fbla-badge {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .content-section {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>South Windsor FBLA</h2>
+            <div>
+                <a href="#resources" class="cta-button">View Resources</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Data Science in Business</h1>
+        <p>South Windsor FBLA's Guide to Data-Driven Success</p>
+        <div class="fbla-badge">FBLA Future Business Leaders</div>
+        <a href="#contact" class="cta-button">Join Our FBLA Chapter</a>
+    </section>
+
+    <section class="content-section">
+        <h2>Developing Data Science Skills with South Windsor FBLA</h2>
+        <p>As part of South Windsor FBLA's commitment to preparing future business leaders, we're focused on developing essential data science skills that will drive success in the modern business world. Our chapter recognizes that data science is rapidly transforming how businesses operate, and we're here to help our members master these crucial skills.</p>
+        
+        <h3>Why Data Science Matters to FBLA Members</h3>
+        <p>In today's business landscape, understanding data science gives FBLA members a competitive edge. South Windsor FBLA provides resources and opportunities to develop these critical skills, preparing our members for successful careers in business and technology.</p>
+        
+        <h3>FBLA Leadership Through Data</h3>
+        <p>South Windsor FBLA members learn how to leverage data science for improved decision-making, customer understanding, and operational efficiency - essential skills for future business leaders.</p>
+    </section>
+
+    <section id="resources" class="content-section">
+        <h2>South Windsor FBLA Data Science Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>FBLA Beginner Resources</h3>
+                <ul>
+                    <li><a href="https://www.amazon.com/Data-Science-High-School-Students/dp/B08XN35MHS">Data Science for Students</a></li>
+                    <li><a href="https://www.youcubed.org/resource/high-school-data-science-course/">FBLA Data Explorations</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/CS50">Computer Science Foundations</a></li>
+                </ul>
+            </div>
+            
+            <div class="resource-card">
+                <h3>FBLA Competition Prep</h3>
+                <ul>
+                    <li><a href="https://skillsbuild.org/students/course-catalog/data-science">IBM Data Science Track</a></li>
+                    <li><a href="https://www.amazon.com/Science-Business-People-Bradford-Tuckfield/dp/1718502885">Business Analytics</a></li>
+                    <li><a href="https://www.notesforshs.com/2024/09/top-data-science-books-for-high-school.html">Competition Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="resource-card">
+                <h3>Advanced FBLA Projects</h3>
+                <ul>
+                    <li><a href="https://www.polygence.org/subjects/data-science-research">Research Opportunities</a></li>
+                    <li><a href="https://www.nextgenbootcamp.com/topics/data-science-classes-high-school-students">Summer Programs</a></li>
+                    <li><a href="https://ischoolonline.berkeley.edu/blog/data-science-reading-list/">Advanced Reading List</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Join South Windsor FBLA</h2>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Why are you interested in joining South Windsor FBLA?" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>South Windsor FBLA Chapter</p>
+        <p>Future Business Leaders of America</p>
+        <p>&copy; 2025 South Windsor FBLA. All rights reserved.</p>
+    </footer>
+</body>
+</html>
